@@ -1,0 +1,27 @@
+{
+  "machine": "x86_64, 2 CPUs, Python 3.13.18",
+  "retrievalMs": {
+    "p50": 4.315321,
+    "p95": 5.338332,
+    "n": 300
+  },
+  "pgvector": {
+    "rows": 6219,
+    "k": 10,
+    "queries": 298,
+    "hnswRecall": 1.0,
+    "recallUnfiltered": 1.0,
+    "recallFiltered": 1.0,
+    "filteredQueries": 208,
+    "nearTwinShare": 0.848689,
+    "p50Ms": 1.382647,
+    "p95Ms": 8.518627,
+    "exactP95Ms": 7.95113,
+    "settings": {
+      "hnswM": 32,
+      "efConstruction": 200,
+      "efSearch": 400,
+      "iterativeScan": "relaxed_order"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.route { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); border-top: 4px solid var(--rule-strong); }
+.terminal { position: relative; padding: var(--space-3) var(--space-2) var(--space-2); border-right: 1px solid var(--rule); min-height: 112px; display: grid; align-content: start; gap: var(--space-1); }
+.terminal:last-child { border-right: 0; }
+.terminal::before { content: ""; position: absolute; top: -4px; left: 0; right: 0; height: 4px; background: transparent; }
+.terminal.on::before { background: var(--petrol); }
+.terminal.failed::before { background: var(--wrong); }
+.terminal-head { display: flex; align-items: baseline; gap: var(--space-1); }
+.terminal-name { font-weight: 600; font-size: var(--size-2); }
+.terminal.off .terminal-name { color: var(--ink-3); font-weight: 500; }
+.terminal-count { font-family: var(--font-tech); font-size: var(--size-1); color: var(--petrol); font-weight: 600; }
+.terminal.failed .terminal-count { color: var(--wrong); }
+.terminal-notes { display: grid; gap: 2px; font-family: var(--font-tech); font-size: var(--size-1); color: var(--ink-2); overflow-wrap: anywhere; }
+.terminal.failed .terminal-notes span:not(:last-child) { color: var(--wrong); }
+.terminal.off .terminal-notes { color: var(--ink-3); }
+@media (max-width: 860px) {
+  .route { grid-template-columns: 1fr; border-top: 0; border-left: 4px solid var(--rule-strong); }
+  .terminal { border-right: 0; border-bottom: 1px solid var(--rule); min-height: 0; }
+  .terminal::before { top: 0; bottom: 0; left: -4px; right: auto; width: 4px; height: auto; }
+}

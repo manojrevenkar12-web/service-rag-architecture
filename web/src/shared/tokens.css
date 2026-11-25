@@ -1,0 +1,39 @@
+/* Design tokens. Components use these names, never raw values. */
+:root {
+  --plate: #e6e9ec;
+  --paper: #f7f8f9;
+  --ink: #18222d;
+  --ink-2: #44505c;
+  --ink-3: #6b7681;
+  --rule: #c5ccd3;
+  --rule-strong: #8f99a3;
+  --petrol: #0e5a61;
+  --petrol-soft: #d3e4e5;
+  --signal: #f2b705;
+  --verified: #2f6b46;
+  --abstain: #8a5f00;
+  --wrong: #a8321f;
+  --wrong-soft: #f3dcd6;
+
+  --font-ui: "Barlow", system-ui, sans-serif;
+  --font-tech: "Barlow Semi Condensed", "Barlow", system-ui, sans-serif;
+
+  --size-1: 0.8125rem;
+  --size-2: 0.9375rem;
+  --size-3: 1.0625rem;
+  --size-4: 1.375rem;
+  --size-5: 2rem;
+  --size-6: 3rem;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 40px;
+
+  --radius-plate: 3px;
+  --radius-control: 2px;
+  --lift: 0 1px 0 rgba(24, 34, 45, 0.08), 0 0 0 1px var(--rule);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}

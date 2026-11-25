@@ -1,0 +1,96 @@
+{
+  "_doc": "Settings of the service assistant. The simulated world never reads this file.",
+  "retrieval": {
+    "candidates": 60,
+    "currentRevision": "B",
+    "embeddingDims": 256
+  },
+  "chunking": {
+    "fixedSize": 800,
+    "fixedOverlap": 120,
+    "structureMaxChars": 700
+  },
+  "firmwareToRevision": {
+    "3": "A",
+    "4": "B"
+  },
+  "warehouses": [
+    "Erlangen",
+    "Stuttgart",
+    "Hamburg"
+  ],
+  "agent": {
+    "maxRetries": 2
+  },
+  "reader": {
+    "model": "claude-sonnet-5-5"
+  },
+  "cost": {
+    "inputEurPerMillionTokens": 2.8,
+    "outputEurPerMillionTokens": 14.0,
+    "outputTokensPerCall": 120,
+    "charsPerToken": 4
+  },
+  "reranker": {
+    "C": 1.0
+  },
+  "glossary": [
+    {
+      "pattern": "umgebungstemp|ambient",
+      "unit": "°C"
+    },
+    {
+      "pattern": "schutzart|\\bip\\b|ip-|degree of protection|ip rating",
+      "unit": "IP"
+    },
+    {
+      "pattern": "drehmoment|torque",
+      "unit": "Nm"
+    },
+    {
+      "pattern": "lüfter|fan",
+      "unit": "h"
+    },
+    {
+      "pattern": "hochlauf|ramp",
+      "unit": "s"
+    },
+    {
+      "pattern": "stromgrenze|current limit",
+      "unit": "%"
+    },
+    {
+      "pattern": "bemessungsstrom|rated current|vorsicherung|fuse",
+      "unit": "A"
+    },
+    {
+      "pattern": "gewicht|schwer|heavy|weight",
+      "unit": "kg"
+    }
+  ],
+  "service": {
+    "demoSeed": 4242,
+    "defaultTenant": "demo",
+    "pgvector": {
+      "hnswM": 32,
+      "efConstruction": 200,
+      "efSearch": 400,
+      "iterativeScan": "relaxed_order"
+    },
+    "audit": {
+      "redact": [
+        "email",
+        "phone",
+        "person"
+      ]
+    },
+    "rateLimitPerMinute": 120
+  },
+  "embeddings": {
+    "provider": "lsa",
+    "hosted": {
+      "url": "https://{resource}.openai.azure.com/openai/deployments/{deployment}/embeddings?api-version=2024-10-21",
+      "dims": 256
+    }
+  }
+}

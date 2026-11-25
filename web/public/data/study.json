@@ -1,0 +1,4924 @@
+{
+  "dev": {
+    "kind": "dev",
+    "seeds": [
+      101,
+      102,
+      103
+    ],
+    "questionsPerSeed": 700,
+    "chunksPerSeed": 1180,
+    "reranker": {
+      "examples": 37140,
+      "positives": 4895,
+      "weights": {
+        "rank": 4.658,
+        "lexical": -0.767,
+        "dense": 5.533,
+        "model": 0.301,
+        "family": 0.922,
+        "revision": 1.369,
+        "lang": -1.669,
+        "variant": 0.918,
+        "code": 11.793,
+        "overlap": 4.09,
+        "history": -5.907,
+        "table": 2.069,
+        "param": 3.681
+      }
+    },
+    "designs": [
+      {
+        "id": "model-alone",
+        "label": "The model alone, no retrieval",
+        "kind": "model-alone",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.042101,
+          "wrongRate": 0.605528,
+          "abstainRate": 0.352371,
+          "unanswerableHandled": 0.368636,
+          "unsafeRefused": 0.548387,
+          "wrongPer1000": 600.952381,
+          "revisionErrors": 0.009402,
+          "recallAt5": null,
+          "mrr": null,
+          "citationPrecision": null,
+          "stockFromTool": 0.0,
+          "llmCallsPerQuestion": 1.0,
+          "contextTokensPerQuestion": 0.0,
+          "costPer1000Eur": 1.68,
+          "byKind": {
+            "attribute": {
+              "correct": 0.055956,
+              "wrong": 0.593026,
+              "n": 874
+            },
+            "errorCode": {
+              "correct": 0.018531,
+              "wrong": 0.58786,
+              "n": 328
+            },
+            "partAndStock": {
+              "correct": 0.0,
+              "wrong": 0.61125,
+              "n": 170
+            },
+            "revision": {
+              "correct": 0.062343,
+              "wrong": 0.669708,
+              "n": 211
+            },
+            "unanswerable": {
+              "correct": 0.368636,
+              "wrong": 0.631364,
+              "n": 161
+            },
+            "unsafe": {
+              "correct": 0.548387,
+              "wrong": 0.451613,
+              "n": 86
+            },
+            "variantAttribute": {
+              "correct": 0.036883,
+              "wrong": 0.61065,
+              "n": 270
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.048387,
+            "wrongRate": 0.619355,
+            "abstainRate": 0.332258,
+            "unanswerableHandled": 0.44,
+            "unsafeRefused": 0.6,
+            "wrongPer1000": 605.714286,
+            "revisionErrors": 0.015385,
+            "recallAt5": null,
+            "mrr": null,
+            "citationPrecision": null,
+            "stockFromTool": 0.0,
+            "llmCallsPerQuestion": 1.0,
+            "contextTokensPerQuestion": 0.0,
+            "costPer1000Eur": 1.68,
+            "byKind": {
+              "attribute": {
+                "n": 302,
+                "correct": 0.059603,
+                "wrong": 0.629139
+              },
+              "errorCode": {
+                "n": 106,
+                "correct": 0.028302,
+                "wrong": 0.575472
+              },
+              "partAndStock": {
+                "n": 55,
+                "correct": 0.0,
+                "wrong": 0.563636
+              },
+              "revision": {
+                "n": 65,
+                "correct": 0.076923,
+                "wrong": 0.676923
+              },
+              "unanswerable": {
+                "n": 50,
+                "correct": 0.44,
+                "wrong": 0.56
+              },
+              "unsafe": {
+                "n": 30,
+                "correct": 0.6,
+                "wrong": 0.4
+              },
+              "variantAttribute": {
+                "n": 92,
+                "correct": 0.043478,
+                "wrong": 0.630435
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.044046,
+            "wrongRate": 0.611746,
+            "abstainRate": 0.344209,
+            "unanswerableHandled": 0.375,
+            "unsafeRefused": 0.645161,
+            "wrongPer1000": 601.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": null,
+            "mrr": null,
+            "citationPrecision": null,
+            "stockFromTool": 0.0,
+            "llmCallsPerQuestion": 1.0,
+            "contextTokensPerQuestion": 0.0,
+            "costPer1000Eur": 1.68,
+            "byKind": {
+              "attribute": {
+                "n": 290,
+                "correct": 0.058621,
+                "wrong": 0.589655
+              },
+              "errorCode": {
+                "n": 108,
+                "correct": 0.018519,
+                "wrong": 0.574074
+              },
+              "partAndStock": {
+                "n": 57,
+                "correct": 0.0,
+                "wrong": 0.666667
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.058824,
+                "wrong": 0.691176
+              },
+              "unanswerable": {
+                "n": 56,
+                "correct": 0.375,
+                "wrong": 0.625
+              },
+              "unsafe": {
+                "n": 31,
+                "correct": 0.645161,
+                "wrong": 0.354839
+              },
+              "variantAttribute": {
+                "n": 90,
+                "correct": 0.044444,
+                "wrong": 0.633333
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.033871,
+            "wrongRate": 0.585484,
+            "abstainRate": 0.380645,
+            "unanswerableHandled": 0.290909,
+            "unsafeRefused": 0.4,
+            "wrongPer1000": 595.714286,
+            "revisionErrors": 0.012821,
+            "recallAt5": null,
+            "mrr": null,
+            "citationPrecision": null,
+            "stockFromTool": 0.0,
+            "llmCallsPerQuestion": 1.0,
+            "contextTokensPerQuestion": 0.0,
+            "costPer1000Eur": 1.68,
+            "byKind": {
+              "attribute": {
+                "n": 282,
+                "correct": 0.049645,
+                "wrong": 0.560284
+              },
+              "errorCode": {
+                "n": 114,
+                "correct": 0.008772,
+                "wrong": 0.614035
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 0.0,
+                "wrong": 0.603448
+              },
+              "revision": {
+                "n": 78,
+                "correct": 0.051282,
+                "wrong": 0.641026
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 0.290909,
+                "wrong": 0.709091
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 0.4,
+                "wrong": 0.6
+              },
+              "variantAttribute": {
+                "n": 88,
+                "correct": 0.022727,
+                "wrong": 0.568182
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "naive-rag",
+        "label": "Naive RAG: fixed chunks, vector search, top 5",
+        "kind": "status-quo",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.547163,
+          "wrongRate": 0.380543,
+          "abstainRate": 0.072295,
+          "unanswerableHandled": 0.368636,
+          "unsafeRefused": 0.548387,
+          "wrongPer1000": 402.380952,
+          "revisionErrors": 0.163725,
+          "recallAt5": 0.791638,
+          "mrr": 0.60268,
+          "citationPrecision": 0.746117,
+          "stockFromTool": 0.0,
+          "llmCallsPerQuestion": 1.0,
+          "contextTokensPerQuestion": 910.060833,
+          "costPer1000Eur": 4.22817,
+          "byKind": {
+            "attribute": {
+              "correct": 0.629323,
+              "wrong": 0.356845,
+              "n": 874
+            },
+            "errorCode": {
+              "correct": 0.40563,
+              "wrong": 0.334768,
+              "n": 328
+            },
+            "partAndStock": {
+              "correct": 0.034998,
+              "wrong": 0.764931,
+              "n": 170
+            },
+            "revision": {
+              "correct": 0.66458,
+              "wrong": 0.326018,
+              "n": 211
+            },
+            "unanswerable": {
+              "correct": 0.368636,
+              "wrong": 0.631364,
+              "n": 161
+            },
+            "unsafe": {
+              "correct": 0.548387,
+              "wrong": 0.451613,
+              "n": 86
+            },
+            "variantAttribute": {
+              "correct": 0.685086,
+              "wrong": 0.31129,
+              "n": 270
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.556452,
+            "wrongRate": 0.367742,
+            "abstainRate": 0.075806,
+            "unanswerableHandled": 0.44,
+            "unsafeRefused": 0.6,
+            "wrongPer1000": 382.857143,
+            "revisionErrors": 0.107692,
+            "recallAt5": 0.803226,
+            "mrr": 0.594247,
+            "citationPrecision": 0.759223,
+            "stockFromTool": 0.0,
+            "llmCallsPerQuestion": 1.0,
+            "contextTokensPerQuestion": 894.299643,
+            "costPer1000Eur": 4.184039,
+            "byKind": {
+              "attribute": {
+                "n": 302,
+                "correct": 0.642384,
+                "wrong": 0.350993
+              },
+              "errorCode": {
+                "n": 106,
+                "correct": 0.396226,
+                "wrong": 0.311321
+              },
+              "partAndStock": {
+                "n": 55,
+                "correct": 0.018182,
+                "wrong": 0.763636
+              },
+              "revision": {
+                "n": 65,
+                "correct": 0.661538,
+                "wrong": 0.323077
+              },
+              "unanswerable": {
+                "n": 50,
+                "correct": 0.44,
+                "wrong": 0.56
+              },
+              "unsafe": {
+                "n": 30,
+                "correct": 0.6,
+                "wrong": 0.4
+              },
+              "variantAttribute": {
+                "n": 92,
+                "correct": 0.706522,
+                "wrong": 0.282609
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.531811,
+            "wrongRate": 0.401305,
+            "abstainRate": 0.066884,
+            "unanswerableHandled": 0.375,
+            "unsafeRefused": 0.645161,
+            "wrongPer1000": 417.142857,
+            "revisionErrors": 0.191176,
+            "recallAt5": 0.77814,
+            "mrr": 0.609761,
+            "citationPrecision": 0.730612,
+            "stockFromTool": 0.0,
+            "llmCallsPerQuestion": 1.0,
+            "contextTokensPerQuestion": 922.786071,
+            "costPer1000Eur": 4.263801,
+            "byKind": {
+              "attribute": {
+                "n": 290,
+                "correct": 0.593103,
+                "wrong": 0.386207
+              },
+              "errorCode": {
+                "n": 108,
+                "correct": 0.425926,
+                "wrong": 0.333333
+              },
+              "partAndStock": {
+                "n": 57,
+                "correct": 0.035088,
+                "wrong": 0.807018
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.691176,
+                "wrong": 0.308824
+              },
+              "unanswerable": {
+                "n": 56,
+                "correct": 0.375,
+                "wrong": 0.625
+              },
+              "unsafe": {
+                "n": 31,
+                "correct": 0.645161,
+                "wrong": 0.354839
+              },
+              "variantAttribute": {
+                "n": 90,
+                "correct": 0.655556,
+                "wrong": 0.344444
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.553226,
+            "wrongRate": 0.372581,
+            "abstainRate": 0.074194,
+            "unanswerableHandled": 0.290909,
+            "unsafeRefused": 0.4,
+            "wrongPer1000": 407.142857,
+            "revisionErrors": 0.192308,
+            "recallAt5": 0.793548,
+            "mrr": 0.604032,
+            "citationPrecision": 0.748515,
+            "stockFromTool": 0.0,
+            "llmCallsPerQuestion": 1.0,
+            "contextTokensPerQuestion": 913.096786,
+            "costPer1000Eur": 4.236671,
+            "byKind": {
+              "attribute": {
+                "n": 282,
+                "correct": 0.652482,
+                "wrong": 0.333333
+              },
+              "errorCode": {
+                "n": 114,
+                "correct": 0.394737,
+                "wrong": 0.359649
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 0.051724,
+                "wrong": 0.724138
+              },
+              "revision": {
+                "n": 78,
+                "correct": 0.641026,
+                "wrong": 0.346154
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 0.290909,
+                "wrong": 0.709091
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 0.4,
+                "wrong": 0.6
+              },
+              "variantAttribute": {
+                "n": 88,
+                "correct": 0.693182,
+                "wrong": 0.306818
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "platform",
+        "label": "Platform: structure chunks, hybrid search, filters, reranker, agents with tools and verifier",
+        "kind": "platform",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.964876,
+          "wrongRate": 0.000544,
+          "abstainRate": 0.034581,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 0.47619,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.965419,
+          "mrr": 0.920829,
+          "citationPrecision": 1.0,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 1.284762,
+          "contextTokensPerQuestion": 615.545595,
+          "costPer1000Eur": 3.881928,
+          "byKind": {
+            "attribute": {
+              "correct": 0.944873,
+              "wrong": 0.0,
+              "n": 874
+            },
+            "errorCode": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 328
+            },
+            "partAndStock": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 170
+            },
+            "revision": {
+              "correct": 0.958798,
+              "wrong": 0.0,
+              "n": 211
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 161
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 86
+            },
+            "variantAttribute": {
+              "correct": 0.970114,
+              "wrong": 0.003704,
+              "n": 270
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.979032,
+            "wrongRate": 0.0,
+            "abstainRate": 0.020968,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.979032,
+            "mrr": 0.939113,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.241429,
+            "contextTokensPerQuestion": 605.472143,
+            "costPer1000Eur": 3.780922,
+            "byKind": {
+              "attribute": {
+                "n": 302,
+                "correct": 0.963576,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 106,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 65,
+                "correct": 0.984615,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 50,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 30,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 92,
+                "correct": 0.98913,
+                "wrong": 0.0
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.952692,
+            "wrongRate": 0.001631,
+            "abstainRate": 0.045677,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.954323,
+            "mrr": 0.901332,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.301429,
+            "contextTokensPerQuestion": 628.945357,
+            "costPer1000Eur": 3.947447,
+            "byKind": {
+              "attribute": {
+                "n": 290,
+                "correct": 0.92069,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 108,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 57,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.955882,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 31,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 90,
+                "correct": 0.966667,
+                "wrong": 0.011111
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.962903,
+            "wrongRate": 0.0,
+            "abstainRate": 0.037097,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.962903,
+            "mrr": 0.922043,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.311429,
+            "contextTokensPerQuestion": 612.219286,
+            "costPer1000Eur": 3.917414,
+            "byKind": {
+              "attribute": {
+                "n": 282,
+                "correct": 0.950355,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 114,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 78,
+                "correct": 0.935897,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 88,
+                "correct": 0.954545,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "fixed-chunks",
+        "label": "Platform with fixed 800-character chunks",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.878572,
+          "wrongRate": 0.000544,
+          "abstainRate": 0.120884,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 0.47619,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.879116,
+          "mrr": 0.793422,
+          "citationPrecision": 0.999382,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 1.722381,
+          "contextTokensPerQuestion": 1504.909524,
+          "costPer1000Eur": 7.107347,
+          "byKind": {
+            "attribute": {
+              "correct": 0.931995,
+              "wrong": 0.0,
+              "n": 874
+            },
+            "errorCode": {
+              "correct": 0.750539,
+              "wrong": 0.0,
+              "n": 328
+            },
+            "partAndStock": {
+              "correct": 0.727861,
+              "wrong": 0.0,
+              "n": 170
+            },
+            "revision": {
+              "correct": 0.89178,
+              "wrong": 0.0,
+              "n": 211
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 161
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 86
+            },
+            "variantAttribute": {
+              "correct": 0.943599,
+              "wrong": 0.003704,
+              "n": 270
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.895161,
+            "wrongRate": 0.0,
+            "abstainRate": 0.104839,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.895161,
+            "mrr": 0.807016,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.7,
+            "contextTokensPerQuestion": 1501.618571,
+            "costPer1000Eur": 7.060532,
+            "byKind": {
+              "attribute": {
+                "n": 302,
+                "correct": 0.956954,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 106,
+                "correct": 0.745283,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 55,
+                "correct": 0.654545,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 65,
+                "correct": 0.923077,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 50,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 30,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 92,
+                "correct": 0.98913,
+                "wrong": 0.0
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.877651,
+            "wrongRate": 0.001631,
+            "abstainRate": 0.120718,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.879282,
+            "mrr": 0.795106,
+            "citationPrecision": 0.998145,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.705714,
+            "contextTokensPerQuestion": 1507.989286,
+            "costPer1000Eur": 7.08797,
+            "byKind": {
+              "attribute": {
+                "n": 290,
+                "correct": 0.924138,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 108,
+                "correct": 0.787037,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 57,
+                "correct": 0.684211,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.867647,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 31,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 90,
+                "correct": 0.966667,
+                "wrong": 0.011111
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.862903,
+            "wrongRate": 0.0,
+            "abstainRate": 0.137097,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.862903,
+            "mrr": 0.778145,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.761429,
+            "contextTokensPerQuestion": 1505.120714,
+            "costPer1000Eur": 7.173538,
+            "byKind": {
+              "attribute": {
+                "n": 282,
+                "correct": 0.914894,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 114,
+                "correct": 0.719298,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 0.844828,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 78,
+                "correct": 0.884615,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 88,
+                "correct": 0.875,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "vector-only",
+        "label": "Platform with vector search only",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.965957,
+          "wrongRate": 0.000544,
+          "abstainRate": 0.033499,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 0.47619,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.966501,
+          "mrr": 0.941875,
+          "citationPrecision": 1.0,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 1.278571,
+          "contextTokensPerQuestion": 623.820357,
+          "costPer1000Eur": 3.894697,
+          "byKind": {
+            "attribute": {
+              "correct": 0.947127,
+              "wrong": 0.0,
+              "n": 874
+            },
+            "errorCode": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 328
+            },
+            "partAndStock": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 170
+            },
+            "revision": {
+              "correct": 0.958798,
+              "wrong": 0.0,
+              "n": 211
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 161
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 86
+            },
+            "variantAttribute": {
+              "correct": 0.970114,
+              "wrong": 0.003704,
+              "n": 270
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.980645,
+            "wrongRate": 0.0,
+            "abstainRate": 0.019355,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.980645,
+            "mrr": 0.960753,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.241429,
+            "contextTokensPerQuestion": 615.1525,
+            "costPer1000Eur": 3.808027,
+            "byKind": {
+              "attribute": {
+                "n": 302,
+                "correct": 0.966887,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 106,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 65,
+                "correct": 0.984615,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 50,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 30,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 92,
+                "correct": 0.98913,
+                "wrong": 0.0
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.954323,
+            "wrongRate": 0.001631,
+            "abstainRate": 0.044046,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.955954,
+            "mrr": 0.924279,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.297143,
+            "contextTokensPerQuestion": 637.229643,
+            "costPer1000Eur": 3.963443,
+            "byKind": {
+              "attribute": {
+                "n": 290,
+                "correct": 0.924138,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 108,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 57,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.955882,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 31,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 90,
+                "correct": 0.966667,
+                "wrong": 0.011111
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.962903,
+            "wrongRate": 0.0,
+            "abstainRate": 0.037097,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.962903,
+            "mrr": 0.940591,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.297143,
+            "contextTokensPerQuestion": 619.078929,
+            "costPer1000Eur": 3.912621,
+            "byKind": {
+              "attribute": {
+                "n": 282,
+                "correct": 0.950355,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 114,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 78,
+                "correct": 0.935897,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 88,
+                "correct": 0.954545,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "keyword-only",
+        "label": "Platform with keyword (BM25) search only",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.952473,
+          "wrongRate": 0.000544,
+          "abstainRate": 0.046983,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 0.47619,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.953017,
+          "mrr": 0.892357,
+          "citationPrecision": 1.0,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 1.335714,
+          "contextTokensPerQuestion": 649.72881,
+          "costPer1000Eur": 4.063241,
+          "byKind": {
+            "attribute": {
+              "correct": 0.921833,
+              "wrong": 0.0,
+              "n": 874
+            },
+            "errorCode": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 328
+            },
+            "partAndStock": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 170
+            },
+            "revision": {
+              "correct": 0.943866,
+              "wrong": 0.0,
+              "n": 211
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 161
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 86
+            },
+            "variantAttribute": {
+              "correct": 0.970114,
+              "wrong": 0.003704,
+              "n": 270
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.967742,
+            "wrongRate": 0.0,
+            "abstainRate": 0.032258,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.967742,
+            "mrr": 0.911532,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.288571,
+            "contextTokensPerQuestion": 640.341071,
+            "costPer1000Eur": 3.957755,
+            "byKind": {
+              "attribute": {
+                "n": 302,
+                "correct": 0.943709,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 106,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 65,
+                "correct": 0.969231,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 50,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 30,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 92,
+                "correct": 0.98913,
+                "wrong": 0.0
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.942904,
+            "wrongRate": 0.001631,
+            "abstainRate": 0.055465,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.944535,
+            "mrr": 0.871588,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.34,
+            "contextTokensPerQuestion": 662.321429,
+            "costPer1000Eur": 4.1057,
+            "byKind": {
+              "attribute": {
+                "n": 290,
+                "correct": 0.906897,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 108,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 57,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.926471,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 31,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 90,
+                "correct": 0.966667,
+                "wrong": 0.011111
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.946774,
+            "wrongRate": 0.0,
+            "abstainRate": 0.053226,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.946774,
+            "mrr": 0.893952,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.378571,
+            "contextTokensPerQuestion": 646.523929,
+            "costPer1000Eur": 4.126267,
+            "byKind": {
+              "attribute": {
+                "n": 282,
+                "correct": 0.914894,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 114,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 78,
+                "correct": 0.935897,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 88,
+                "correct": 0.954545,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "no-filters",
+        "label": "Platform without product and edition filters",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.92495,
+          "wrongRate": 0.000544,
+          "abstainRate": 0.074507,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 0.47619,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.925493,
+          "mrr": 0.775674,
+          "citationPrecision": 1.0,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 1.58,
+          "contextTokensPerQuestion": 726.277976,
+          "costPer1000Eur": 4.687978,
+          "byKind": {
+            "attribute": {
+              "correct": 0.881054,
+              "wrong": 0.0,
+              "n": 874
+            },
+            "errorCode": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 328
+            },
+            "partAndStock": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 170
+            },
+            "revision": {
+              "correct": 0.883409,
+              "wrong": 0.0,
+              "n": 211
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 161
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 86
+            },
+            "variantAttribute": {
+              "correct": 0.962868,
+              "wrong": 0.003704,
+              "n": 270
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.930645,
+            "wrongRate": 0.0,
+            "abstainRate": 0.069355,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.930645,
+            "mrr": 0.791667,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.612857,
+            "contextTokensPerQuestion": 747.926429,
+            "costPer1000Eur": 4.803794,
+            "byKind": {
+              "attribute": {
+                "n": 302,
+                "correct": 0.890728,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 106,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 65,
+                "correct": 0.892308,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 50,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 30,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 92,
+                "correct": 0.967391,
+                "wrong": 0.0
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.915171,
+            "wrongRate": 0.001631,
+            "abstainRate": 0.083197,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.916803,
+            "mrr": 0.762452,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.55,
+            "contextTokensPerQuestion": 718.156786,
+            "costPer1000Eur": 4.614839,
+            "byKind": {
+              "attribute": {
+                "n": 290,
+                "correct": 0.851724,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 108,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 57,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.911765,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 31,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 90,
+                "correct": 0.966667,
+                "wrong": 0.011111
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.929032,
+            "wrongRate": 0.0,
+            "abstainRate": 0.070968,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.929032,
+            "mrr": 0.772903,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.577143,
+            "contextTokensPerQuestion": 712.750714,
+            "costPer1000Eur": 4.645302,
+            "byKind": {
+              "attribute": {
+                "n": 282,
+                "correct": 0.900709,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 114,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 78,
+                "correct": 0.846154,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 88,
+                "correct": 0.954545,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "no-reranker",
+        "label": "Platform without the reranker",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.928218,
+          "wrongRate": 0.000544,
+          "abstainRate": 0.071238,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 0.47619,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.928762,
+          "mrr": 0.835957,
+          "citationPrecision": 1.0,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 1.454286,
+          "contextTokensPerQuestion": 630.249286,
+          "costPer1000Eur": 4.207898,
+          "byKind": {
+            "attribute": {
+              "correct": 0.946082,
+              "wrong": 0.0,
+              "n": 874
+            },
+            "errorCode": {
+              "correct": 0.796315,
+              "wrong": 0.0,
+              "n": 328
+            },
+            "partAndStock": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 170
+            },
+            "revision": {
+              "correct": 0.948994,
+              "wrong": 0.0,
+              "n": 211
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 161
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 86
+            },
+            "variantAttribute": {
+              "correct": 0.970114,
+              "wrong": 0.003704,
+              "n": 270
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.940323,
+            "wrongRate": 0.0,
+            "abstainRate": 0.059677,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.940323,
+            "mrr": 0.852688,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.415714,
+            "contextTokensPerQuestion": 627.267857,
+            "costPer1000Eur": 4.13475,
+            "byKind": {
+              "attribute": {
+                "n": 302,
+                "correct": 0.956954,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 106,
+                "correct": 0.792453,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 65,
+                "correct": 0.984615,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 50,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 30,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 92,
+                "correct": 0.98913,
+                "wrong": 0.0
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.926591,
+            "wrongRate": 0.001631,
+            "abstainRate": 0.071778,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.928222,
+            "mrr": 0.820908,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.424286,
+            "contextTokensPerQuestion": 626.927857,
+            "costPer1000Eur": 4.148198,
+            "byKind": {
+              "attribute": {
+                "n": 290,
+                "correct": 0.934483,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 108,
+                "correct": 0.833333,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 57,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.926471,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 31,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 90,
+                "correct": 0.966667,
+                "wrong": 0.011111
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.917742,
+            "wrongRate": 0.0,
+            "abstainRate": 0.082258,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.917742,
+            "mrr": 0.834274,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.522857,
+            "contextTokensPerQuestion": 636.552143,
+            "costPer1000Eur": 4.340746,
+            "byKind": {
+              "attribute": {
+                "n": 282,
+                "correct": 0.946809,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 114,
+                "correct": 0.763158,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 78,
+                "correct": 0.935897,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 88,
+                "correct": 0.954545,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "no-verifier",
+        "label": "Platform without the verifier",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.942808,
+          "wrongRate": 0.048571,
+          "abstainRate": 0.008621,
+          "unanswerableHandled": 0.68829,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 66.666667,
+          "revisionErrors": 0.01003,
+          "recallAt5": 0.981128,
+          "mrr": 0.936672,
+          "citationPrecision": 0.992807,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 0.919048,
+          "contextTokensPerQuestion": 478.303333,
+          "costPer1000Eur": 2.883249,
+          "byKind": {
+            "attribute": {
+              "correct": 0.920755,
+              "wrong": 0.069899,
+              "n": 874
+            },
+            "errorCode": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 328
+            },
+            "partAndStock": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 170
+            },
+            "revision": {
+              "correct": 0.89731,
+              "wrong": 0.075792,
+              "n": 211
+            },
+            "unanswerable": {
+              "correct": 0.68829,
+              "wrong": 0.31171,
+              "n": 161
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 86
+            },
+            "variantAttribute": {
+              "correct": 0.943599,
+              "wrong": 0.048825,
+              "n": 270
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.958065,
+            "wrongRate": 0.040323,
+            "abstainRate": 0.001613,
+            "unanswerableHandled": 0.66,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 60.0,
+            "revisionErrors": 0.015385,
+            "recallAt5": 0.996774,
+            "mrr": 0.95578,
+            "citationPrecision": 0.996759,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 0.925714,
+            "contextTokensPerQuestion": 490.303571,
+            "costPer1000Eur": 2.92805,
+            "byKind": {
+              "attribute": {
+                "n": 302,
+                "correct": 0.933775,
+                "wrong": 0.062914
+              },
+              "errorCode": {
+                "n": 106,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 65,
+                "correct": 0.923077,
+                "wrong": 0.076923
+              },
+              "unanswerable": {
+                "n": 50,
+                "correct": 0.66,
+                "wrong": 0.34
+              },
+              "unsafe": {
+                "n": 30,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 92,
+                "correct": 0.98913,
+                "wrong": 0.01087
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.946166,
+            "wrongRate": 0.04894,
+            "abstainRate": 0.004894,
+            "unanswerableHandled": 0.732143,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 64.285714,
+            "revisionErrors": 0.014706,
+            "recallAt5": 0.985318,
+            "mrr": 0.930044,
+            "citationPrecision": 0.985025,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 0.91,
+            "contextTokensPerQuestion": 477.258929,
+            "costPer1000Eur": 2.865125,
+            "byKind": {
+              "attribute": {
+                "n": 290,
+                "correct": 0.92069,
+                "wrong": 0.075862
+              },
+              "errorCode": {
+                "n": 108,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 57,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.897059,
+                "wrong": 0.073529
+              },
+              "unanswerable": {
+                "n": 56,
+                "correct": 0.732143,
+                "wrong": 0.267857
+              },
+              "unsafe": {
+                "n": 31,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 90,
+                "correct": 0.966667,
+                "wrong": 0.033333
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.924194,
+            "wrongRate": 0.056452,
+            "abstainRate": 0.019355,
+            "unanswerableHandled": 0.672727,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 75.714286,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.96129,
+            "mrr": 0.924194,
+            "citationPrecision": 0.996639,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 0.921429,
+            "contextTokensPerQuestion": 467.3475,
+            "costPer1000Eur": 2.856573,
+            "byKind": {
+              "attribute": {
+                "n": 282,
+                "correct": 0.907801,
+                "wrong": 0.070922
+              },
+              "errorCode": {
+                "n": 114,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 78,
+                "correct": 0.871795,
+                "wrong": 0.076923
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 0.672727,
+                "wrong": 0.327273
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 88,
+                "correct": 0.875,
+                "wrong": 0.102273
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "no-tools",
+        "label": "Platform without the stock tool",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.816431,
+          "wrongRate": 0.000544,
+          "abstainRate": 0.183025,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 0.47619,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.816975,
+          "mrr": 0.77871,
+          "citationPrecision": 1.0,
+          "stockFromTool": null,
+          "llmCallsPerQuestion": 1.937143,
+          "contextTokensPerQuestion": 970.497619,
+          "costPer1000Eur": 5.971793,
+          "byKind": {
+            "attribute": {
+              "correct": 0.855688,
+              "wrong": 0.0,
+              "n": 874
+            },
+            "errorCode": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 328
+            },
+            "partAndStock": {
+              "correct": 0.0,
+              "wrong": 0.0,
+              "n": 170
+            },
+            "revision": {
+              "correct": 0.958798,
+              "wrong": 0.0,
+              "n": 211
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 161
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 86
+            },
+            "variantAttribute": {
+              "correct": 0.87033,
+              "wrong": 0.003704,
+              "n": 270
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.832258,
+            "wrongRate": 0.0,
+            "abstainRate": 0.167742,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.832258,
+            "mrr": 0.800269,
+            "citationPrecision": 1.0,
+            "stockFromTool": null,
+            "llmCallsPerQuestion": 1.885714,
+            "contextTokensPerQuestion": 960.036786,
+            "costPer1000Eur": 5.856103,
+            "byKind": {
+              "attribute": {
+                "n": 302,
+                "correct": 0.877483,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 106,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 55,
+                "correct": 0.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 65,
+                "correct": 0.984615,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 50,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 30,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 92,
+                "correct": 0.880435,
+                "wrong": 0.0
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.794454,
+            "wrongRate": 0.001631,
+            "abstainRate": 0.203915,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.796085,
+            "mrr": 0.750109,
+            "citationPrecision": 1.0,
+            "stockFromTool": null,
+            "llmCallsPerQuestion": 1.992857,
+            "contextTokensPerQuestion": 999.039286,
+            "costPer1000Eur": 6.14531,
+            "byKind": {
+              "attribute": {
+                "n": 290,
+                "correct": 0.817241,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 108,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 57,
+                "correct": 0.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.955882,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 31,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 90,
+                "correct": 0.855556,
+                "wrong": 0.011111
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.822581,
+            "wrongRate": 0.0,
+            "abstainRate": 0.177419,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.822581,
+            "mrr": 0.785753,
+            "citationPrecision": 1.0,
+            "stockFromTool": null,
+            "llmCallsPerQuestion": 1.932857,
+            "contextTokensPerQuestion": 952.416786,
+            "costPer1000Eur": 5.913967,
+            "byKind": {
+              "attribute": {
+                "n": 282,
+                "correct": 0.87234,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 114,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 0.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 78,
+                "correct": 0.935897,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 88,
+                "correct": 0.875,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "no-guardrails",
+        "label": "Platform without the safety and unknown-product guards",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.964876,
+          "wrongRate": 0.000544,
+          "abstainRate": 0.034581,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 0.548387,
+          "wrongPer1000": 0.47619,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.965419,
+          "mrr": 0.920829,
+          "citationPrecision": 1.0,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 1.768571,
+          "contextTokensPerQuestion": 813.468452,
+          "costPer1000Eur": 5.248912,
+          "byKind": {
+            "attribute": {
+              "correct": 0.944873,
+              "wrong": 0.0,
+              "n": 874
+            },
+            "errorCode": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 328
+            },
+            "partAndStock": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 170
+            },
+            "revision": {
+              "correct": 0.958798,
+              "wrong": 0.0,
+              "n": 211
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 161
+            },
+            "unsafe": {
+              "correct": 0.548387,
+              "wrong": 0.0,
+              "n": 86
+            },
+            "variantAttribute": {
+              "correct": 0.970114,
+              "wrong": 0.003704,
+              "n": 270
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.979032,
+            "wrongRate": 0.0,
+            "abstainRate": 0.020968,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 0.6,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.979032,
+            "mrr": 0.939113,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.687143,
+            "contextTokensPerQuestion": 790.320357,
+            "costPer1000Eur": 5.047297,
+            "byKind": {
+              "attribute": {
+                "n": 302,
+                "correct": 0.963576,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 106,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 65,
+                "correct": 0.984615,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 50,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 30,
+                "correct": 0.6,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 92,
+                "correct": 0.98913,
+                "wrong": 0.0
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.952692,
+            "wrongRate": 0.001631,
+            "abstainRate": 0.045677,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 0.645161,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.954323,
+            "mrr": 0.901332,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.841429,
+            "contextTokensPerQuestion": 842.709286,
+            "costPer1000Eur": 5.453186,
+            "byKind": {
+              "attribute": {
+                "n": 290,
+                "correct": 0.92069,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 108,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 57,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.955882,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 31,
+                "correct": 0.645161,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 90,
+                "correct": 0.966667,
+                "wrong": 0.011111
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.962903,
+            "wrongRate": 0.0,
+            "abstainRate": 0.037097,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 0.4,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.962903,
+            "mrr": 0.922043,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.777143,
+            "contextTokensPerQuestion": 807.375714,
+            "costPer1000Eur": 5.246252,
+            "byKind": {
+              "attribute": {
+                "n": 282,
+                "correct": 0.950355,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 114,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 78,
+                "correct": 0.935897,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 0.4,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 88,
+                "correct": 0.954545,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "top-10",
+        "label": "Platform reading 10 passages instead of 5",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.969207,
+          "wrongRate": 0.000544,
+          "abstainRate": 0.030249,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 0.47619,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.966495,
+          "mrr": 0.922297,
+          "citationPrecision": 1.0,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 1.27,
+          "contextTokensPerQuestion": 1297.354286,
+          "costPer1000Eur": 5.766192,
+          "byKind": {
+            "attribute": {
+              "correct": 0.95401,
+              "wrong": 0.0,
+              "n": 874
+            },
+            "errorCode": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 328
+            },
+            "partAndStock": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 170
+            },
+            "revision": {
+              "correct": 0.958798,
+              "wrong": 0.0,
+              "n": 211
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 161
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 86
+            },
+            "variantAttribute": {
+              "correct": 0.970114,
+              "wrong": 0.003704,
+              "n": 270
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.982258,
+            "wrongRate": 0.0,
+            "abstainRate": 0.017742,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.980645,
+            "mrr": 0.940887,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.228571,
+            "contextTokensPerQuestion": 1273.498929,
+            "costPer1000Eur": 5.629797,
+            "byKind": {
+              "attribute": {
+                "n": 302,
+                "correct": 0.970199,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 106,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 65,
+                "correct": 0.984615,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 50,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 30,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 92,
+                "correct": 0.98913,
+                "wrong": 0.0
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.960848,
+            "wrongRate": 0.001631,
+            "abstainRate": 0.03752,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.954323,
+            "mrr": 0.902347,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.271429,
+            "contextTokensPerQuestion": 1319.318214,
+            "costPer1000Eur": 5.830091,
+            "byKind": {
+              "attribute": {
+                "n": 290,
+                "correct": 0.937931,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 108,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 57,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.955882,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 31,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 90,
+                "correct": 0.966667,
+                "wrong": 0.011111
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.964516,
+            "wrongRate": 0.0,
+            "abstainRate": 0.035484,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.964516,
+            "mrr": 0.923656,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.31,
+            "contextTokensPerQuestion": 1299.245714,
+            "costPer1000Eur": 5.838688,
+            "byKind": {
+              "attribute": {
+                "n": 282,
+                "correct": 0.953901,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 114,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 78,
+                "correct": 0.935897,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 88,
+                "correct": 0.954545,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "gates": [
+      {
+        "id": "correct",
+        "label": "Answerable questions answered correctly",
+        "value": 0.964876,
+        "limit": "≥ 0.9",
+        "pass": true
+      },
+      {
+        "id": "wrong",
+        "label": "Wrong answers per 1,000 questions",
+        "value": 0.47619,
+        "limit": "≤ 10",
+        "pass": true
+      },
+      {
+        "id": "wrong-vs-naive",
+        "label": "Wrong answers, as a share of naive RAG's",
+        "value": 0.47619,
+        "limit": "≤ 0.05 × naive RAG (402.4)",
+        "pass": true
+      },
+      {
+        "id": "unanswerable",
+        "label": "Unanswerable questions declined",
+        "value": 1.0,
+        "limit": "≥ 0.95",
+        "pass": true
+      },
+      {
+        "id": "unsafe",
+        "label": "Requests to bypass safety functions refused",
+        "value": 1.0,
+        "limit": "≥ 0.98",
+        "pass": true
+      },
+      {
+        "id": "revision",
+        "label": "Firmware-specific questions answered from the wrong edition",
+        "value": 0.0,
+        "limit": "≤ 0.01",
+        "pass": true
+      },
+      {
+        "id": "citations",
+        "label": "Answers whose cited passage states the answer",
+        "value": 1.0,
+        "limit": "≥ 0.98",
+        "pass": true
+      },
+      {
+        "id": "recall",
+        "label": "Answer-bearing passage among the 5 read",
+        "value": 0.965419,
+        "limit": "≥ 0.95",
+        "pass": true
+      },
+      {
+        "id": "cost",
+        "label": "Model cost per 1,000 questions, €",
+        "value": 3.881928,
+        "limit": "≤ 6.0",
+        "pass": true
+      }
+    ]
+  },
+  "heldout": {
+    "kind": "heldout",
+    "seeds": [
+      9101,
+      9102
+    ],
+    "questionsPerSeed": 700,
+    "chunksPerSeed": 1167,
+    "reranker": {
+      "examples": 37140,
+      "positives": 4895,
+      "weights": {
+        "rank": 4.658,
+        "lexical": -0.767,
+        "dense": 5.533,
+        "model": 0.301,
+        "family": 0.922,
+        "revision": 1.369,
+        "lang": -1.669,
+        "variant": 0.918,
+        "code": 11.793,
+        "overlap": 4.09,
+        "history": -5.907,
+        "table": 2.069,
+        "param": 3.681
+      }
+    },
+    "designs": [
+      {
+        "id": "model-alone",
+        "label": "The model alone, no retrieval",
+        "kind": "model-alone",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.056217,
+          "wrongRate": 0.62823,
+          "abstainRate": 0.315553,
+          "unanswerableHandled": 0.411262,
+          "unsafeRefused": 0.666154,
+          "wrongPer1000": 615.0,
+          "revisionErrors": 0.0,
+          "recallAt5": null,
+          "mrr": null,
+          "citationPrecision": null,
+          "stockFromTool": 0.0,
+          "llmCallsPerQuestion": 1.0,
+          "contextTokensPerQuestion": 0.0,
+          "costPer1000Eur": 1.68,
+          "byKind": {
+            "attribute": {
+              "correct": 0.064037,
+              "wrong": 0.644443,
+              "n": 608
+            },
+            "errorCode": {
+              "correct": 0.010945,
+              "wrong": 0.666388,
+              "n": 183
+            },
+            "partAndStock": {
+              "correct": 0.0,
+              "wrong": 0.64101,
+              "n": 114
+            },
+            "revision": {
+              "correct": 0.087596,
+              "wrong": 0.547741,
+              "n": 137
+            },
+            "unanswerable": {
+              "correct": 0.411262,
+              "wrong": 0.588738,
+              "n": 122
+            },
+            "unsafe": {
+              "correct": 0.666154,
+              "wrong": 0.333846,
+              "n": 51
+            },
+            "variantAttribute": {
+              "correct": 0.088084,
+              "wrong": 0.589022,
+              "n": 185
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.054276,
+            "wrongRate": 0.613487,
+            "abstainRate": 0.332237,
+            "unanswerableHandled": 0.313433,
+            "unsafeRefused": 0.64,
+            "wrongPer1000": 611.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": null,
+            "mrr": null,
+            "citationPrecision": null,
+            "stockFromTool": 0.0,
+            "llmCallsPerQuestion": 1.0,
+            "contextTokensPerQuestion": 0.0,
+            "costPer1000Eur": 1.68,
+            "byKind": {
+              "attribute": {
+                "n": 301,
+                "correct": 0.053156,
+                "wrong": 0.614618
+              },
+              "errorCode": {
+                "n": 95,
+                "correct": 0.010526,
+                "wrong": 0.673684
+              },
+              "partAndStock": {
+                "n": 56,
+                "correct": 0.0,
+                "wrong": 0.678571
+              },
+              "revision": {
+                "n": 69,
+                "correct": 0.086957,
+                "wrong": 0.507246
+              },
+              "unanswerable": {
+                "n": 67,
+                "correct": 0.313433,
+                "wrong": 0.686567
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 0.64,
+                "wrong": 0.36
+              },
+              "variantAttribute": {
+                "n": 87,
+                "correct": 0.114943,
+                "wrong": 0.586207
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.058158,
+            "wrongRate": 0.642973,
+            "abstainRate": 0.298869,
+            "unanswerableHandled": 0.509091,
+            "unsafeRefused": 0.692308,
+            "wrongPer1000": 618.571429,
+            "revisionErrors": 0.0,
+            "recallAt5": null,
+            "mrr": null,
+            "citationPrecision": null,
+            "stockFromTool": 0.0,
+            "llmCallsPerQuestion": 1.0,
+            "contextTokensPerQuestion": 0.0,
+            "costPer1000Eur": 1.68,
+            "byKind": {
+              "attribute": {
+                "n": 307,
+                "correct": 0.074919,
+                "wrong": 0.674267
+              },
+              "errorCode": {
+                "n": 88,
+                "correct": 0.011364,
+                "wrong": 0.659091
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 0.0,
+                "wrong": 0.603448
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.088235,
+                "wrong": 0.588235
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 0.509091,
+                "wrong": 0.490909
+              },
+              "unsafe": {
+                "n": 26,
+                "correct": 0.692308,
+                "wrong": 0.307692
+              },
+              "variantAttribute": {
+                "n": 98,
+                "correct": 0.061224,
+                "wrong": 0.591837
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "naive-rag",
+        "label": "Naive RAG: fixed chunks, vector search, top 5",
+        "kind": "status-quo",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.584289,
+          "wrongRate": 0.366043,
+          "abstainRate": 0.049668,
+          "unanswerableHandled": 0.411262,
+          "unsafeRefused": 0.666154,
+          "wrongPer1000": 385.0,
+          "revisionErrors": 0.153453,
+          "recallAt5": 0.817602,
+          "mrr": 0.650841,
+          "citationPrecision": 0.775748,
+          "stockFromTool": 0.0,
+          "llmCallsPerQuestion": 1.0,
+          "contextTokensPerQuestion": 937.339107,
+          "costPer1000Eur": 4.30455,
+          "byKind": {
+            "attribute": {
+              "correct": 0.674343,
+              "wrong": 0.319078,
+              "n": 608
+            },
+            "errorCode": {
+              "correct": 0.395694,
+              "wrong": 0.424342,
+              "n": 183
+            },
+            "partAndStock": {
+              "correct": 0.079741,
+              "wrong": 0.745998,
+              "n": 114
+            },
+            "revision": {
+              "correct": 0.685742,
+              "wrong": 0.292306,
+              "n": 137
+            },
+            "unanswerable": {
+              "correct": 0.411262,
+              "wrong": 0.588738,
+              "n": 122
+            },
+            "unsafe": {
+              "correct": 0.666154,
+              "wrong": 0.333846,
+              "n": 51
+            },
+            "variantAttribute": {
+              "correct": 0.710884,
+              "wrong": 0.284014,
+              "n": 185
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.577303,
+            "wrongRate": 0.378289,
+            "abstainRate": 0.044408,
+            "unanswerableHandled": 0.313433,
+            "unsafeRefused": 0.64,
+            "wrongPer1000": 407.142857,
+            "revisionErrors": 0.130435,
+            "recallAt5": 0.835526,
+            "mrr": 0.678015,
+            "citationPrecision": 0.785992,
+            "stockFromTool": 0.0,
+            "llmCallsPerQuestion": 1.0,
+            "contextTokensPerQuestion": 946.168214,
+            "costPer1000Eur": 4.329271,
+            "byKind": {
+              "attribute": {
+                "n": 301,
+                "correct": 0.674419,
+                "wrong": 0.318937
+              },
+              "errorCode": {
+                "n": 95,
+                "correct": 0.336842,
+                "wrong": 0.473684
+              },
+              "partAndStock": {
+                "n": 56,
+                "correct": 0.125,
+                "wrong": 0.767857
+              },
+              "revision": {
+                "n": 69,
+                "correct": 0.73913,
+                "wrong": 0.246377
+              },
+              "unanswerable": {
+                "n": 67,
+                "correct": 0.313433,
+                "wrong": 0.686567
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 0.64,
+                "wrong": 0.36
+              },
+              "variantAttribute": {
+                "n": 87,
+                "correct": 0.666667,
+                "wrong": 0.333333
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.591276,
+            "wrongRate": 0.353796,
+            "abstainRate": 0.054927,
+            "unanswerableHandled": 0.509091,
+            "unsafeRefused": 0.692308,
+            "wrongPer1000": 362.857143,
+            "revisionErrors": 0.176471,
+            "recallAt5": 0.799677,
+            "mrr": 0.623667,
+            "citationPrecision": 0.765504,
+            "stockFromTool": 0.0,
+            "llmCallsPerQuestion": 1.0,
+            "contextTokensPerQuestion": 928.51,
+            "costPer1000Eur": 4.279828,
+            "byKind": {
+              "attribute": {
+                "n": 307,
+                "correct": 0.674267,
+                "wrong": 0.319218
+              },
+              "errorCode": {
+                "n": 88,
+                "correct": 0.454545,
+                "wrong": 0.375
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 0.034483,
+                "wrong": 0.724138
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.632353,
+                "wrong": 0.338235
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 0.509091,
+                "wrong": 0.490909
+              },
+              "unsafe": {
+                "n": 26,
+                "correct": 0.692308,
+                "wrong": 0.307692
+              },
+              "variantAttribute": {
+                "n": 98,
+                "correct": 0.755102,
+                "wrong": 0.234694
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "platform",
+        "label": "Platform: structure chunks, hybrid search, filters, reranker, agents with tools and verifier",
+        "kind": "platform",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.970658,
+          "wrongRate": 0.000822,
+          "abstainRate": 0.02852,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 0.714286,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.97148,
+          "mrr": 0.934138,
+          "citationPrecision": 1.0,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 1.310714,
+          "contextTokensPerQuestion": 629.668214,
+          "costPer1000Eur": 3.965071,
+          "byKind": {
+            "attribute": {
+              "correct": 0.952249,
+              "wrong": 0.0,
+              "n": 608
+            },
+            "errorCode": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 183
+            },
+            "partAndStock": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 114
+            },
+            "revision": {
+              "correct": 0.970695,
+              "wrong": 0.0,
+              "n": 137
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 122
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 51
+            },
+            "variantAttribute": {
+              "correct": 0.984049,
+              "wrong": 0.005747,
+              "n": 185
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.970395,
+            "wrongRate": 0.001645,
+            "abstainRate": 0.027961,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.972039,
+            "mrr": 0.935992,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.332857,
+            "contextTokensPerQuestion": 645.9275,
+            "costPer1000Eur": 4.047797,
+            "byKind": {
+              "attribute": {
+                "n": 301,
+                "correct": 0.946844,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 95,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 69,
+                "correct": 0.985507,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 67,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 87,
+                "correct": 0.988506,
+                "wrong": 0.011494
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.970921,
+            "wrongRate": 0.0,
+            "abstainRate": 0.029079,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.970921,
+            "mrr": 0.932283,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.288571,
+            "contextTokensPerQuestion": 613.408929,
+            "costPer1000Eur": 3.882345,
+            "byKind": {
+              "attribute": {
+                "n": 307,
+                "correct": 0.957655,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 88,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.955882,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 26,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 98,
+                "correct": 0.979592,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "fixed-chunks",
+        "label": "Platform with fixed 800-character chunks",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.90792,
+          "wrongRate": 0.000822,
+          "abstainRate": 0.091258,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 0.714286,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.908742,
+          "mrr": 0.827755,
+          "citationPrecision": 0.998206,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 1.662143,
+          "contextTokensPerQuestion": 1479.977321,
+          "costPer1000Eur": 6.936336,
+          "byKind": {
+            "attribute": {
+              "correct": 0.955572,
+              "wrong": 0.0,
+              "n": 608
+            },
+            "errorCode": {
+              "correct": 0.770574,
+              "wrong": 0.0,
+              "n": 183
+            },
+            "partAndStock": {
+              "correct": 0.754618,
+              "wrong": 0.0,
+              "n": 114
+            },
+            "revision": {
+              "correct": 0.912298,
+              "wrong": 0.0,
+              "n": 137
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 122
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 51
+            },
+            "variantAttribute": {
+              "correct": 0.978947,
+              "wrong": 0.005747,
+              "n": 185
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.909539,
+            "wrongRate": 0.001645,
+            "abstainRate": 0.088816,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.911184,
+            "mrr": 0.841831,
+            "citationPrecision": 0.998195,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.658571,
+            "contextTokensPerQuestion": 1479.768214,
+            "costPer1000Eur": 6.929751,
+            "byKind": {
+              "attribute": {
+                "n": 301,
+                "correct": 0.953488,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 95,
+                "correct": 0.768421,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 56,
+                "correct": 0.767857,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 69,
+                "correct": 0.927536,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 67,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 87,
+                "correct": 0.988506,
+                "wrong": 0.011494
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.9063,
+            "wrongRate": 0.0,
+            "abstainRate": 0.0937,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.9063,
+            "mrr": 0.813678,
+            "citationPrecision": 0.998217,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.665714,
+            "contextTokensPerQuestion": 1480.186429,
+            "costPer1000Eur": 6.942922,
+            "byKind": {
+              "attribute": {
+                "n": 307,
+                "correct": 0.957655,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 88,
+                "correct": 0.772727,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 0.741379,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.897059,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 26,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 98,
+                "correct": 0.969388,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "vector-only",
+        "label": "Platform with vector search only",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.970658,
+          "wrongRate": 0.000822,
+          "abstainRate": 0.02852,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 0.714286,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.97148,
+          "mrr": 0.950603,
+          "citationPrecision": 1.0,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 1.303571,
+          "contextTokensPerQuestion": 636.326071,
+          "costPer1000Eur": 3.971713,
+          "byKind": {
+            "attribute": {
+              "correct": 0.952249,
+              "wrong": 0.0,
+              "n": 608
+            },
+            "errorCode": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 183
+            },
+            "partAndStock": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 114
+            },
+            "revision": {
+              "correct": 0.970695,
+              "wrong": 0.0,
+              "n": 137
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 122
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 51
+            },
+            "variantAttribute": {
+              "correct": 0.984049,
+              "wrong": 0.005747,
+              "n": 185
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.970395,
+            "wrongRate": 0.001645,
+            "abstainRate": 0.027961,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.972039,
+            "mrr": 0.955729,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.327143,
+            "contextTokensPerQuestion": 655.708929,
+            "costPer1000Eur": 4.065585,
+            "byKind": {
+              "attribute": {
+                "n": 301,
+                "correct": 0.946844,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 95,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 69,
+                "correct": 0.985507,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 67,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 87,
+                "correct": 0.988506,
+                "wrong": 0.011494
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.970921,
+            "wrongRate": 0.0,
+            "abstainRate": 0.029079,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.970921,
+            "mrr": 0.945477,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.28,
+            "contextTokensPerQuestion": 616.943214,
+            "costPer1000Eur": 3.877841,
+            "byKind": {
+              "attribute": {
+                "n": 307,
+                "correct": 0.957655,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 88,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.955882,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 26,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 98,
+                "correct": 0.979592,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "keyword-only",
+        "label": "Platform with keyword (BM25) search only",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.955135,
+          "wrongRate": 0.000822,
+          "abstainRate": 0.044043,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 0.714286,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.955957,
+          "mrr": 0.90301,
+          "citationPrecision": 1.0,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 1.367857,
+          "contextTokensPerQuestion": 672.968214,
+          "costPer1000Eur": 4.182311,
+          "byKind": {
+            "attribute": {
+              "correct": 0.925866,
+              "wrong": 0.0,
+              "n": 608
+            },
+            "errorCode": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 183
+            },
+            "partAndStock": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 114
+            },
+            "revision": {
+              "correct": 0.948849,
+              "wrong": 0.0,
+              "n": 137
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 122
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 51
+            },
+            "variantAttribute": {
+              "correct": 0.984049,
+              "wrong": 0.005747,
+              "n": 185
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.950658,
+            "wrongRate": 0.001645,
+            "abstainRate": 0.047697,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.952303,
+            "mrr": 0.905482,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.402857,
+            "contextTokensPerQuestion": 694.756071,
+            "costPer1000Eur": 4.302117,
+            "byKind": {
+              "attribute": {
+                "n": 301,
+                "correct": 0.913621,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 95,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 69,
+                "correct": 0.956522,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 67,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 87,
+                "correct": 0.988506,
+                "wrong": 0.011494
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.959612,
+            "wrongRate": 0.0,
+            "abstainRate": 0.040388,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.959612,
+            "mrr": 0.900539,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.332857,
+            "contextTokensPerQuestion": 651.180357,
+            "costPer1000Eur": 4.062505,
+            "byKind": {
+              "attribute": {
+                "n": 307,
+                "correct": 0.938111,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 88,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.941176,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 26,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 98,
+                "correct": 0.979592,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "no-filters",
+        "label": "Platform without product and edition filters",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.936513,
+          "wrongRate": 0.000822,
+          "abstainRate": 0.062665,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 0.714286,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.937335,
+          "mrr": 0.798608,
+          "citationPrecision": 1.0,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 1.593571,
+          "contextTokensPerQuestion": 733.360179,
+          "costPer1000Eur": 4.730609,
+          "byKind": {
+            "attribute": {
+              "correct": 0.899775,
+              "wrong": 0.0,
+              "n": 608
+            },
+            "errorCode": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 183
+            },
+            "partAndStock": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 114
+            },
+            "revision": {
+              "correct": 0.912191,
+              "wrong": 0.0,
+              "n": 137
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 122
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 51
+            },
+            "variantAttribute": {
+              "correct": 0.9732,
+              "wrong": 0.005747,
+              "n": 185
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.945724,
+            "wrongRate": 0.001645,
+            "abstainRate": 0.052632,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.947368,
+            "mrr": 0.817544,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.59,
+            "contextTokensPerQuestion": 749.008571,
+            "costPer1000Eur": 4.768424,
+            "byKind": {
+              "attribute": {
+                "n": 301,
+                "correct": 0.910299,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 95,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 69,
+                "correct": 0.942029,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 67,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 87,
+                "correct": 0.977011,
+                "wrong": 0.011494
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.927302,
+            "wrongRate": 0.0,
+            "abstainRate": 0.072698,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.927302,
+            "mrr": 0.779672,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.597143,
+            "contextTokensPerQuestion": 717.711786,
+            "costPer1000Eur": 4.692793,
+            "byKind": {
+              "attribute": {
+                "n": 307,
+                "correct": 0.889251,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 88,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.882353,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 26,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 98,
+                "correct": 0.969388,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "no-reranker",
+        "label": "Platform without the reranker",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.940391,
+          "wrongRate": 0.000822,
+          "abstainRate": 0.058787,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 0.714286,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.941213,
+          "mrr": 0.858557,
+          "citationPrecision": 1.0,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 1.440714,
+          "contextTokensPerQuestion": 636.428929,
+          "costPer1000Eur": 4.202401,
+          "byKind": {
+            "attribute": {
+              "correct": 0.955539,
+              "wrong": 0.0,
+              "n": 608
+            },
+            "errorCode": {
+              "correct": 0.794976,
+              "wrong": 0.0,
+              "n": 183
+            },
+            "partAndStock": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 114
+            },
+            "revision": {
+              "correct": 0.963448,
+              "wrong": 0.0,
+              "n": 137
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 122
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 51
+            },
+            "variantAttribute": {
+              "correct": 0.984049,
+              "wrong": 0.005747,
+              "n": 185
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.927632,
+            "wrongRate": 0.001645,
+            "abstainRate": 0.070724,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.929276,
+            "mrr": 0.847862,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.514286,
+            "contextTokensPerQuestion": 663.314643,
+            "costPer1000Eur": 4.401281,
+            "byKind": {
+              "attribute": {
+                "n": 301,
+                "correct": 0.950166,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 95,
+                "correct": 0.726316,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 69,
+                "correct": 0.971014,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 67,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 87,
+                "correct": 0.988506,
+                "wrong": 0.011494
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.95315,
+            "wrongRate": 0.0,
+            "abstainRate": 0.04685,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.95315,
+            "mrr": 0.869251,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.367143,
+            "contextTokensPerQuestion": 609.543214,
+            "costPer1000Eur": 4.003521,
+            "byKind": {
+              "attribute": {
+                "n": 307,
+                "correct": 0.960912,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 88,
+                "correct": 0.863636,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.955882,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 26,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 98,
+                "correct": 0.979592,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "no-verifier",
+        "label": "Platform without the verifier",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.952683,
+          "wrongRate": 0.043235,
+          "abstainRate": 0.004083,
+          "unanswerableHandled": 0.719267,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 62.857143,
+          "revisionErrors": 0.014493,
+          "recallAt5": 0.990205,
+          "mrr": 0.951718,
+          "citationPrecision": 0.995865,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 0.921429,
+          "contextTokensPerQuestion": 478.905,
+          "costPer1000Eur": 2.888934,
+          "byKind": {
+            "attribute": {
+              "correct": 0.924302,
+              "wrong": 0.067457,
+              "n": 608
+            },
+            "errorCode": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 183
+            },
+            "partAndStock": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 114
+            },
+            "revision": {
+              "correct": 0.941709,
+              "wrong": 0.058291,
+              "n": 137
+            },
+            "unanswerable": {
+              "correct": 0.719267,
+              "wrong": 0.280733,
+              "n": 122
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 51
+            },
+            "variantAttribute": {
+              "correct": 0.977657,
+              "wrong": 0.022343,
+              "n": 185
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.947368,
+            "wrongRate": 0.047697,
+            "abstainRate": 0.004934,
+            "unanswerableHandled": 0.656716,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 74.285714,
+            "revisionErrors": 0.028986,
+            "recallAt5": 0.988487,
+            "mrr": 0.95244,
+            "citationPrecision": 0.994992,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 0.918571,
+            "contextTokensPerQuestion": 482.718214,
+            "costPer1000Eur": 2.894811,
+            "byKind": {
+              "attribute": {
+                "n": 301,
+                "correct": 0.920266,
+                "wrong": 0.069767
+              },
+              "errorCode": {
+                "n": 95,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 69,
+                "correct": 0.927536,
+                "wrong": 0.072464
+              },
+              "unanswerable": {
+                "n": 67,
+                "correct": 0.656716,
+                "wrong": 0.343284
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 87,
+                "correct": 0.965517,
+                "wrong": 0.034483
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.957997,
+            "wrongRate": 0.038772,
+            "abstainRate": 0.003231,
+            "unanswerableHandled": 0.781818,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 51.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.991922,
+            "mrr": 0.950996,
+            "citationPrecision": 0.996737,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 0.924286,
+            "contextTokensPerQuestion": 475.091786,
+            "costPer1000Eur": 2.883057,
+            "byKind": {
+              "attribute": {
+                "n": 307,
+                "correct": 0.928339,
+                "wrong": 0.065147
+              },
+              "errorCode": {
+                "n": 88,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.955882,
+                "wrong": 0.044118
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 0.781818,
+                "wrong": 0.218182
+              },
+              "unsafe": {
+                "n": 26,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 98,
+                "correct": 0.989796,
+                "wrong": 0.010204
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "no-tools",
+        "label": "Platform without the stock tool",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.802814,
+          "wrongRate": 0.000822,
+          "abstainRate": 0.196364,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 0.714286,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.803636,
+          "mrr": 0.774864,
+          "citationPrecision": 1.0,
+          "stockFromTool": null,
+          "llmCallsPerQuestion": 2.040714,
+          "contextTokensPerQuestion": 1023.870179,
+          "costPer1000Eur": 6.295236,
+          "byKind": {
+            "attribute": {
+              "correct": 0.846911,
+              "wrong": 0.0,
+              "n": 608
+            },
+            "errorCode": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 183
+            },
+            "partAndStock": {
+              "correct": 0.0,
+              "wrong": 0.0,
+              "n": 114
+            },
+            "revision": {
+              "correct": 0.970695,
+              "wrong": 0.0,
+              "n": 137
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 122
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 51
+            },
+            "variantAttribute": {
+              "correct": 0.835386,
+              "wrong": 0.005747,
+              "n": 185
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.807566,
+            "wrongRate": 0.001645,
+            "abstainRate": 0.190789,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.809211,
+            "mrr": 0.783169,
+            "citationPrecision": 1.0,
+            "stockFromTool": null,
+            "llmCallsPerQuestion": 2.032857,
+            "contextTokensPerQuestion": 1027.437857,
+            "costPer1000Eur": 6.292026,
+            "byKind": {
+              "attribute": {
+                "n": 301,
+                "correct": 0.833887,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 95,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 56,
+                "correct": 0.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 69,
+                "correct": 0.985507,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 67,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 87,
+                "correct": 0.885057,
+                "wrong": 0.011494
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.798061,
+            "wrongRate": 0.0,
+            "abstainRate": 0.201939,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.798061,
+            "mrr": 0.766559,
+            "citationPrecision": 1.0,
+            "stockFromTool": null,
+            "llmCallsPerQuestion": 2.048571,
+            "contextTokensPerQuestion": 1020.3025,
+            "costPer1000Eur": 6.298447,
+            "byKind": {
+              "attribute": {
+                "n": 307,
+                "correct": 0.859935,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 88,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 0.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.955882,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 26,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 98,
+                "correct": 0.785714,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "no-guardrails",
+        "label": "Platform without the safety and unknown-product guards",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.970658,
+          "wrongRate": 0.000822,
+          "abstainRate": 0.02852,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 0.666154,
+          "wrongPer1000": 0.714286,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.97148,
+          "mrr": 0.934138,
+          "citationPrecision": 1.0,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 1.782143,
+          "contextTokensPerQuestion": 823.496607,
+          "costPer1000Eur": 5.29979,
+          "byKind": {
+            "attribute": {
+              "correct": 0.952249,
+              "wrong": 0.0,
+              "n": 608
+            },
+            "errorCode": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 183
+            },
+            "partAndStock": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 114
+            },
+            "revision": {
+              "correct": 0.970695,
+              "wrong": 0.0,
+              "n": 137
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 122
+            },
+            "unsafe": {
+              "correct": 0.666154,
+              "wrong": 0.0,
+              "n": 51
+            },
+            "variantAttribute": {
+              "correct": 0.984049,
+              "wrong": 0.005747,
+              "n": 185
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.970395,
+            "wrongRate": 0.001645,
+            "abstainRate": 0.027961,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 0.64,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.972039,
+            "mrr": 0.935992,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.821429,
+            "contextTokensPerQuestion": 855.016786,
+            "costPer1000Eur": 5.454047,
+            "byKind": {
+              "attribute": {
+                "n": 301,
+                "correct": 0.946844,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 95,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 69,
+                "correct": 0.985507,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 67,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 0.64,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 87,
+                "correct": 0.988506,
+                "wrong": 0.011494
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.970921,
+            "wrongRate": 0.0,
+            "abstainRate": 0.029079,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 0.692308,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.970921,
+            "mrr": 0.932283,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.742857,
+            "contextTokensPerQuestion": 791.976429,
+            "costPer1000Eur": 5.145534,
+            "byKind": {
+              "attribute": {
+                "n": 307,
+                "correct": 0.957655,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 88,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.955882,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 26,
+                "correct": 0.692308,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 98,
+                "correct": 0.979592,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "top-10",
+        "label": "Platform reading 10 passages instead of 5",
+        "kind": "ablation",
+        "mean": {
+          "questions": 700.0,
+          "correctRate": 0.978823,
+          "wrongRate": 0.000822,
+          "abstainRate": 0.020355,
+          "unanswerableHandled": 1.0,
+          "unsafeRefused": 1.0,
+          "wrongPer1000": 0.714286,
+          "revisionErrors": 0.0,
+          "recallAt5": 0.972303,
+          "mrr": 0.935766,
+          "citationPrecision": 1.0,
+          "stockFromTool": 1.0,
+          "llmCallsPerQuestion": 1.274286,
+          "contextTokensPerQuestion": 1298.038571,
+          "costPer1000Eur": 5.775308,
+          "byKind": {
+            "attribute": {
+              "correct": 0.968731,
+              "wrong": 0.0,
+              "n": 608
+            },
+            "errorCode": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 183
+            },
+            "partAndStock": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 114
+            },
+            "revision": {
+              "correct": 0.970695,
+              "wrong": 0.0,
+              "n": 137
+            },
+            "unanswerable": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 122
+            },
+            "unsafe": {
+              "correct": 1.0,
+              "wrong": 0.0,
+              "n": 51
+            },
+            "variantAttribute": {
+              "correct": 0.984049,
+              "wrong": 0.005747,
+              "n": 185
+            }
+          }
+        },
+        "perSeed": [
+          {
+            "questions": 700,
+            "correctRate": 0.980263,
+            "wrongRate": 0.001645,
+            "abstainRate": 0.018092,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 1.428571,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.973684,
+            "mrr": 0.938741,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.291429,
+            "contextTokensPerQuestion": 1309.1275,
+            "costPer1000Eur": 5.835157,
+            "byKind": {
+              "attribute": {
+                "n": 301,
+                "correct": 0.966777,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 95,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 56,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 69,
+                "correct": 0.985507,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 67,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 25,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 87,
+                "correct": 0.988506,
+                "wrong": 0.011494
+              }
+            }
+          },
+          {
+            "questions": 700,
+            "correctRate": 0.977383,
+            "wrongRate": 0.0,
+            "abstainRate": 0.022617,
+            "unanswerableHandled": 1.0,
+            "unsafeRefused": 1.0,
+            "wrongPer1000": 0.0,
+            "revisionErrors": 0.0,
+            "recallAt5": 0.970921,
+            "mrr": 0.93279,
+            "citationPrecision": 1.0,
+            "stockFromTool": 1.0,
+            "llmCallsPerQuestion": 1.257143,
+            "contextTokensPerQuestion": 1286.949643,
+            "costPer1000Eur": 5.715459,
+            "byKind": {
+              "attribute": {
+                "n": 307,
+                "correct": 0.970684,
+                "wrong": 0.0
+              },
+              "errorCode": {
+                "n": 88,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "partAndStock": {
+                "n": 58,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "revision": {
+                "n": 68,
+                "correct": 0.955882,
+                "wrong": 0.0
+              },
+              "unanswerable": {
+                "n": 55,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "unsafe": {
+                "n": 26,
+                "correct": 1.0,
+                "wrong": 0.0
+              },
+              "variantAttribute": {
+                "n": 98,
+                "correct": 0.979592,
+                "wrong": 0.0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "gates": [
+      {
+        "id": "correct",
+        "label": "Answerable questions answered correctly",
+        "value": 0.970658,
+        "limit": "≥ 0.9",
+        "pass": true
+      },
+      {
+        "id": "wrong",
+        "label": "Wrong answers per 1,000 questions",
+        "value": 0.714286,
+        "limit": "≤ 10",
+        "pass": true
+      },
+      {
+        "id": "wrong-vs-naive",
+        "label": "Wrong answers, as a share of naive RAG's",
+        "value": 0.714286,
+        "limit": "≤ 0.05 × naive RAG (385.0)",
+        "pass": true
+      },
+      {
+        "id": "unanswerable",
+        "label": "Unanswerable questions declined",
+        "value": 1.0,
+        "limit": "≥ 0.95",
+        "pass": true
+      },
+      {
+        "id": "unsafe",
+        "label": "Requests to bypass safety functions refused",
+        "value": 1.0,
+        "limit": "≥ 0.98",
+        "pass": true
+      },
+      {
+        "id": "revision",
+        "label": "Firmware-specific questions answered from the wrong edition",
+        "value": 0.0,
+        "limit": "≤ 0.01",
+        "pass": true
+      },
+      {
+        "id": "citations",
+        "label": "Answers whose cited passage states the answer",
+        "value": 1.0,
+        "limit": "≥ 0.98",
+        "pass": true
+      },
+      {
+        "id": "recall",
+        "label": "Answer-bearing passage among the 5 read",
+        "value": 0.97148,
+        "limit": "≥ 0.95",
+        "pass": true
+      },
+      {
+        "id": "cost",
+        "label": "Model cost per 1,000 questions, €",
+        "value": 3.965071,
+        "limit": "≤ 6.0",
+        "pass": true
+      }
+    ]
+  },
+  "bench": {
+    "machine": "x86_64, 2 CPUs, Python 3.13.18",
+    "retrievalMs": {
+      "p50": 4.315321,
+      "p95": 5.338332,
+      "n": 300
+    },
+    "pgvector": {
+      "rows": 6219,
+      "k": 10,
+      "queries": 298,
+      "hnswRecall": 1.0,
+      "recallUnfiltered": 1.0,
+      "recallFiltered": 1.0,
+      "filteredQueries": 208,
+      "nearTwinShare": 0.848689,
+      "p50Ms": 1.382647,
+      "p95Ms": 8.518627,
+      "exactP95Ms": 7.95113,
+      "settings": {
+        "hnswM": 32,
+        "efConstruction": 200,
+        "efSearch": 400,
+        "iterativeScan": "relaxed_order"
+      }
+    }
+  }
+}

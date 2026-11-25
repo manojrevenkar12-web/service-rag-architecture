@@ -1,0 +1,165 @@
+{
+  "_doc": "The simulated equipment maker: product families, manuals, technicians' questions and the stock behind the parts API. Only src/sra/world reads this file.",
+  "modelsPerFamily": 16,
+  "families": [
+    {
+      "key": "vfd",
+      "prefix": "VD",
+      "de": "Frequenzumrichter",
+      "en": "Frequency converter",
+      "variantsKw": [
+        [
+          0.75,
+          1.5,
+          3.0
+        ],
+        [
+          4.0,
+          5.5,
+          7.5
+        ],
+        [
+          11.0,
+          15.0,
+          18.5
+        ],
+        [
+          22.0,
+          30.0,
+          37.0
+        ]
+      ]
+    },
+    {
+      "key": "servo",
+      "prefix": "SV",
+      "de": "Servoverstärker",
+      "en": "Servo drive",
+      "variantsKw": [
+        [
+          0.4,
+          0.75,
+          1.5
+        ],
+        [
+          2.0,
+          3.5,
+          5.0
+        ],
+        [
+          7.0,
+          9.0,
+          12.0
+        ]
+      ]
+    },
+    {
+      "key": "compressor",
+      "prefix": "KX",
+      "de": "Schraubenkompressor",
+      "en": "Screw compressor",
+      "variantsKw": [
+        [
+          5.5,
+          7.5,
+          11.0
+        ],
+        [
+          15.0,
+          18.5,
+          22.0
+        ],
+        [
+          30.0,
+          37.0,
+          45.0
+        ]
+      ]
+    },
+    {
+      "key": "chiller",
+      "prefix": "CH",
+      "de": "Kaltwassersatz",
+      "en": "Water chiller",
+      "variantsKw": [
+        [
+          8.0,
+          12.0,
+          16.0
+        ],
+        [
+          20.0,
+          28.0,
+          35.0
+        ],
+        [
+          45.0,
+          60.0,
+          75.0
+        ]
+      ]
+    },
+    {
+      "key": "robot",
+      "prefix": "RC",
+      "de": "Robotersteuerung",
+      "en": "Robot controller",
+      "variantsKw": [
+        [
+          1.0,
+          2.0,
+          3.0
+        ],
+        [
+          4.0,
+          6.0,
+          8.0
+        ]
+      ]
+    }
+  ],
+  "revisions": {
+    "A": "3",
+    "B": "4"
+  },
+  "revisionChangeProbability": 0.45,
+  "errorCodesPerFamily": 14,
+  "partShareOfErrorCodes": 0.6,
+  "warehouses": [
+    "Erlangen",
+    "Stuttgart",
+    "Hamburg"
+  ],
+  "queries": {
+    "count": 700,
+    "mix": {
+      "attribute": 0.42,
+      "variantAttribute": 0.14,
+      "revision": 0.1,
+      "errorCode": 0.14,
+      "partAndStock": 0.08,
+      "unanswerable": 0.08,
+      "unsafe": 0.04
+    },
+    "germanShare": 0.55,
+    "crossLanguageShare": 0.0,
+    "modelSpellingNoise": 0.35,
+    "orderNumberShare": 0.12
+  },
+  "llm": {
+    "_doc": "How the simulated language model behaves. It reads the question well, and reads context as an LLM does: it can be misled by context, and without context it invents.",
+    "misreadQuestion": 0.02,
+    "answersWithoutEntityCheck": 0.85,
+    "inventsWhenNothingFound": 0.65,
+    "knowsFromPretraining": 0.04,
+    "readsHistoryLines": 0.5,
+    "refusesUnsafeAlone": 0.6,
+    "confusesModelInLine": 0.08
+  },
+  "seriesSize": [
+    2,
+    3
+  ],
+  "englishOnlyShare": 0.2,
+  "metadataDefectShare": 0.07
+}

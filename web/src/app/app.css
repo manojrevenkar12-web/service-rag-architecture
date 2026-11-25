@@ -1,0 +1,7 @@
+.bar-top { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding: var(--space-3) var(--space-5); background: var(--ink); color: var(--paper); border-bottom: 4px solid var(--petrol); flex-wrap: wrap; }
+.brand { font-weight: 600; font-size: var(--size-3); }
+.brand span { font-weight: 400; color: var(--rule); margin-left: var(--space-2); }
+.bar-top nav { display: flex; gap: var(--space-1); }
+.bar-top nav button { background: none; border: 0; color: var(--rule); padding: var(--space-2) var(--space-3); cursor: pointer; font-weight: 500; border-bottom: 2px solid transparent; }
+.bar-top nav button[aria-current="page"] { color: var(--paper); border-bottom-color: var(--signal); }
+.page { padding: var(--space-5); max-width: 1320px; margin: 0 auto; }

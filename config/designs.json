@@ -1,0 +1,20 @@
+{
+  "_doc": "Each design is a set of architecture choices. Every design meets the same corpus, questions and model behaviour.",
+  "designs": [
+    {"id": "model-alone", "label": "The model alone, no retrieval", "kind": "model-alone",
+     "chunking": "structure", "mode": "hybrid", "filters": false, "rerank": false, "k": 5, "retrieval": false, "guard": false, "unknownCheck": false, "tools": false, "verify": false},
+    {"id": "naive-rag", "label": "Naive RAG: fixed chunks, vector search, top 5", "kind": "status-quo",
+     "chunking": "fixed", "mode": "dense", "filters": false, "rerank": false, "k": 5, "retrieval": true, "guard": false, "unknownCheck": false, "tools": false, "verify": false},
+    {"id": "platform", "label": "Platform: structure chunks, hybrid search, filters, reranker, agents with tools and verifier", "kind": "platform",
+     "chunking": "structure", "mode": "hybrid", "filters": true, "rerank": true, "k": 5, "retrieval": true, "guard": true, "unknownCheck": true, "tools": true, "verify": true},
+    {"id": "fixed-chunks", "label": "Platform with fixed 800-character chunks", "kind": "ablation", "base": "platform", "chunking": "fixed"},
+    {"id": "vector-only", "label": "Platform with vector search only", "kind": "ablation", "base": "platform", "mode": "dense"},
+    {"id": "keyword-only", "label": "Platform with keyword (BM25) search only", "kind": "ablation", "base": "platform", "mode": "lexical"},
+    {"id": "no-filters", "label": "Platform without product and edition filters", "kind": "ablation", "base": "platform", "filters": false},
+    {"id": "no-reranker", "label": "Platform without the reranker", "kind": "ablation", "base": "platform", "rerank": false},
+    {"id": "no-verifier", "label": "Platform without the verifier", "kind": "ablation", "base": "platform", "verify": false},
+    {"id": "no-tools", "label": "Platform without the stock tool", "kind": "ablation", "base": "platform", "tools": false},
+    {"id": "no-guardrails", "label": "Platform without the safety and unknown-product guards", "kind": "ablation", "base": "platform", "guard": false, "unknownCheck": false},
+    {"id": "top-10", "label": "Platform reading 10 passages instead of 5", "kind": "ablation", "base": "platform", "k": 10}
+  ]
+}
